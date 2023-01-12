@@ -1,0 +1,122 @@
+$orange: #FF7101;
+$dark-gray: #202020; 
+.main-slider {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 13vw), 0 100%);
+  }
+  
+  .swiper {
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 600px !important;
+  }
+  
+  .sper-slide {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+  }
+  .swiper-pagination-bullets {
+    bottom: 17% !important;
+  }
+  .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
+    background-color: #fff !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 13px !important;
+    height: 13px !important;
+    background-color: transparent !important;
+    border-radius: 50%;
+    background-color: $orange !important;
+    box-shadow: 0px 0px 15px #FF5C00;
+  }
+  
+
+  .slider-info{
+    display: flex;
+    text-align: left;
+    width: 40%;
+    height: 100%;
+    padding: 10% 20px !important;
+  }
+  /*AboutUs*/
+  .about-us{
+    padding: 40px 0;
+    color: #000 !important;
+    &__body{
+      display: flex;
+      justify-content: center;
+    }
+    &__img{
+      width: 40%;
+      img{
+        width: 330px;
+        height: 393px;
+      }
+    }
+    &__info{
+      width: 30%;
+    }
+  }
+  /*Coach*/
+  .coach{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    padding: 50px 0 0 0;
+    background-color: $dark-gray;
+    clip-path: polygon(0 calc(100% - 43vw), 100% 0, 100% 100%, 0 100%);
+    &-header{
+      display: flex;
+      align-items: end;
+      width: 100%;
+      flex-direction: column;
+    }
+    &-info{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &__body{
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        width: 100%;
+        margin: 50px 0 0 0;
+      }
+      &__img{
+        width: 330px;
+        height: 367px;
+        background-color: #fff;
+      }
+      &__name{
+        color: $orange;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        margin: 15px 0 0 0;
+      }
+      &__description{
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }

@@ -6,42 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
         <div class=" __container">
             <div class="header-body">
             <div class="header-body__logo">
-                <img src="src/img/header/Logo.png" alt="">
-                Логотип
+                <a href="#">Логотип</a>
             </div>
             <div class="header__burger">
                 <span></span>
             </div>
                 <div class="header-body__menu">
                     <ul class="header-body__menu-list">
-                        <li>Главная</li>
-                        <li>Товары</li>
-                        <li>123</li>
-                        <li>123</li>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Расписание</a></li>
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Контакты</a></li>
                     </ul>
-                    <!-- <div class="header-body__menu-search">
-                        <input type="search" placeholder="Search">
-                    </div> -->
-                    <!-- <div class="header-body__menu-user">
-                        <div class="header-body__menu-user-img">
-                            <img src="src/img/header/User.svg" alt="">
-                        </div>
-                        <select class="header-select" name="select"> 
-                            <option value="value1">My XBOX</option>
-                        </select>
-                    </div> -->
                 </div>
                    
             </div>
            
         </div>
     </header>
-    <script src="src/js/style.js"></script>
+    <section class="sliderContainer section-main">
+            <div class="main-slider swiper-container">
+                <div class=" swiper-wrapper">
+                    <div class="swiper-slide" style="background: linear-gradient(180deg, rgba(1, 1, 1, 0.984375) 0.01%, rgba(10, 10, 10, 0.805012) 45.15%, rgba(32, 32, 32, 0) 137.61%),
+                    url('/src/img/brunette-athletic-woman-exercising-with-rubber-tape.jpg') center no-repeat; background-size: cover;">
+                    <div class="slider-info content">
+                        <div class="slider-info-body">
+                            <div class="title">
+                                <img src="/src/img/dumbbells-orange.svg" alt="">
+                                Добро пожаловать
+                            </div>
+                            <div class="subtitle">
+                                Твоя новая жизнь может начаться уже сегодня.
+                            </div>
+                            <div class="button-b">
+                                <a>Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide" style="background: linear-gradient(180deg, rgba(1, 1, 1, 0.984375) 0.01%, rgba(10, 10, 10, 0.805012) 45.15%, rgba(32, 32, 32, 0) 137.61%),
+                    url('/src/img/brunette-athletic-woman-exercising-with-rubber-tape.jpg') center no-repeat; background-size: cover;">
+                    <div class="slider-info content">
+                        <div class="slider-info-body">
+                            <div class="title">
+                                <img src="/src/img/dumbbells-orange.svg" alt="">
+                                Добро пожаловать
+                            </div>
+                            <div class="subtitle">
+                                Твоя новая жизнь может начаться уже сегодня.
+                            </div>
+                            <div class="button-b">
+                                <a>Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide" style="background: linear-gradient(180deg, rgba(1, 1, 1, 0.984375) 0.01%, rgba(10, 10, 10, 0.805012) 45.15%, rgba(32, 32, 32, 0) 137.61%),
+                    url('/src/img/brunette-athletic-woman-exercising-with-rubber-tape.jpg') center no-repeat; background-size: cover;">
+                    <div class="slider-info content">
+                        <div class="slider-info-body">
+                            <div class="title">
+                                <img src="/src/img/dumbbells-orange.svg" alt="">
+                                Добро пожаловать
+                            </div>
+                            <div class="subtitle">
+                                Твоя новая жизнь может начаться уже сегодня.
+                            </div>
+                            <div class="button-b">
+                                <a>Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </section>
+    <section class="about-us">
+        <div class="content">
+            <div class="about-us__body">
+                <div class="about-us__img"><img src="src/img/test_photo.png" alt=""></div>
+                <div class="about-us__info">
+                    <div class="title"><img src="src/img/dumbbells-black.svg" alt="">О нас</div>
+                    <div class="subtitle">Один из лучших залов Челябинска!</div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestib ulum porttitor egestas orci, vitae ullamcorper risus consectetur id. Donec at velit vestibulum, rutrum massa quis, porttitor lorem. Donec et ultricies arcu. In odio augue, hendrerit nec nisl ac, rhoncus gravida mauris.
+                        Quisque consectetur ligula eu urna dignissim, nec mollis ipsum aliquam. Aliquam non est a ipsum facilisis scelerisque eu sed lectus.
+                    </div>
+                    <div class="button-b">
+                        <a href="">Читать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="coach">
+        <div class="content">
+            <div class="coach-header">
+                <div class="coach-header__body">
+                    <div class="title">
+                        <img src="src/img/dumbbells-orange.svg" alt="">
+                         Тренера
+                    </div>
+                    <div class="subtitle">
+                        Один из лучших залов Челябинска!
+                    </div>
+                </div>
+                <div class="coach-info__body">
+                    <div class="coach-info">
+                        <div class="coach-info__img"></div>
+                        <div class="coach-info__name">
+                            Name
+                        </div>
+                        <div class="coach-info__description">
+                            Name
+                        </div>
+                    </div>
+                    <div class="coach-info">
+                        <div class="coach-info__img"></div>
+                        <div class="coach-info__name">
+                            Name
+                        </div>
+                        <div class="coach-info__description">
+                            Name
+                        </div>
+                    </div>
+                    <div class="coach-info">
+                        <div class="coach-info__img"></div>
+                        <div class="coach-info__name">
+                            Name
+                        </div>
+                        <div class="coach-info__description">
+                            Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.main-slider', {
+            observe: true,
+            observeParents: true,
+            observeSliderChildren: true,
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>

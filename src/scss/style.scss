@@ -1,14 +1,44 @@
 @import  '../scss/header';
+@import  '../scss/main';
 /*Шрифты*/
-@font-face { 
-    font-family: "HelveticaNeueCyrThin";
-    src: url("../fonts/HelveticaNeueCyrThin/HelveticaNeueCyrThin.eot");
-    src: url("../fonts/HelveticaNeueCyrThin/HelveticaNeueCyrThin.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/HelveticaNeueCyrThin/HelveticaNeueCyrThin.woff") format("woff"),
-    url("../fonts/HelveticaNeueCyrThin/HelveticaNeueCyrThin.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 100;
-  }
+@font-face{
+  font-family: 'Raleway';
+  src: url(/src/fonts/Raleway/Raleway-ExtraBold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Raleway';
+  src: url(/src/fonts/Raleway/Raleway-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Raleway';
+  src: url(/src/fonts/Raleway/Raleway-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Raleway';
+  src: url(/src/fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Lato';
+  src: url(/src/fonts/Lato/Lato-Bold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Lato';
+  src: url(/src/fonts/Lato/Lato-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+// colors
+$orange: #FF7101;
   *,
   *::before,
   *::after {
@@ -42,9 +72,9 @@
     margin: 0;
   }
   body {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
     color: #fff;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -58,8 +88,7 @@
       list-style-type: none;
   }
   a{
-  
-      text-decoration: none
+      text-decoration: none;
   }
   a:not([class]) {
     text-decoration-skip-ink: auto;
@@ -89,4 +118,46 @@
   .__container{
       max-width: 1200px;
       margin: 0 auto;
+  }
+  .content{
+      width: 100%;
+      max-width: 1084px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  .section-main{
+    margin: 50px 0 0 0;
+  }
+  .title{
+    display: flex;
+    gap: 5px;
+    align-items: start;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: 50px;
+  }
+  .subtitle{
+    display: inline-block;
+    border-bottom: 2px solid $orange;
+    padding: 10px 0 0 0;
+    font-weight: 600px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .button-b{
+    margin: 60px 0 0 0;
+  }
+  .button-b a{
+    background: $orange;
+    box-shadow: 0px 3px 0px #A53E05, 0px 10px 30px #FF7101;
+    border-radius: 30px;
+    padding: 15px 39px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .text{
+    margin: 18px 0 0 0;
   }

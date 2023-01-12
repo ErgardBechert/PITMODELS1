@@ -1,3 +1,5 @@
+$orange: #FF7101;
+
 .header{
     position: fixed;
     top: 0;
@@ -12,11 +14,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #373A3C;
+        background-color: #000;
         z-index: 2;
-    }
-    select{
-        color: rgba($color: #fff, $alpha: 0.5);
     }
     &-body{
         position: relative;
@@ -33,49 +32,36 @@
             display: flex;
             gap: 37px;
             z-index: 2;
-            &-user{
-                display: flex;
-            }
             ul{
                 position: relative;
                 display: flex;
                 gap: 25px;
                 justify-content: center;
                 align-items: center;
-                color: rgba($color: #fff, $alpha: 0.5);
             }
             li{
+                a{
+                    border-bottom: 2px solid #000;
+                    padding: 5px 0;
+                    transition: all 0.3s ease;
+                    color: #fff;
+                }
+                
                 cursor: pointer;
-                select{
-                    color: rgba($color: #fff, $alpha: 0.5);
-                }
-            }
-            a{
-                color: #fff;
                 &:hover{
-                    border-bottom: 1px solid #fff; 
+                    a{
+                        border-bottom: 2px solid $orange; 
+                    }    
                 }
             }
+            
        
         }
     }
 }
 
-.header-select {
-    border: none;
-    background: none;
-    position: relative;
-    display: inline-block;
-    
-  }
-
 
 @media (max-width: 854px){
-    .header{
-        select{
-            color: #8DD83D;
-        }
-    }
     body.lock{
         overflow: hidden;
     }
@@ -87,20 +73,17 @@
             left: 0;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
+            text-align: left;
             width: 100%;
             height: 100%;
-            padding: 80px 0 0 0;
-            background-color: #17191A;
-            color: #8DD83D;
+            padding: 80px 20px 0 30px;
+            background-color: #000;
             transition: all 0.5s ease 0s;
             ul{
                 flex-direction: column;
-                li{
-                   
-                        color: #8DD83D;
-                    
-                }
+                align-items: start !important;
+                font-weight: 600;
             }
             &.active{
                 top: 0;
@@ -112,10 +95,11 @@
         display: block;
         width: 30px;
         height: 20px;
+        cursor: pointer;
         z-index: 3;
         &:before, &:after{
             content: '';
-            background-color: #fff;
+            background-color: $orange;
             position: absolute;
             width: 100%;
             height: 2px;
@@ -130,7 +114,7 @@
         }
         span{
             position: absolute;
-            background-color: #fff;
+            background-color: $orange;
             left: 0;
             width: 100%;
             height: 2px;
