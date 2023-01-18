@@ -1,0 +1,10 @@
+$orange: #FF5C00;
+$dark-gray: #202020; 
+$gray: #D9D9D9;
+.header-section{
+    height: 500px;
+    background-color: $dark-gray;
+    &__body{
+        padding: 44px 0 0 0;
+    }
+}

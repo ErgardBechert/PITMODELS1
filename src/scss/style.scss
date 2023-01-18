@@ -1,5 +1,6 @@
 @import  '../scss/header';
 @import  '../scss/main';
+@import  '../scss/aboutUs';
 /*Шрифты*/
 @font-face{
   font-family: 'Raleway';
@@ -38,7 +39,7 @@
   font-style: normal;
 }
 // colors
-$orange: #FF7101;
+$orange: #FF5C00;
   *,
   *::before,
   *::after {
