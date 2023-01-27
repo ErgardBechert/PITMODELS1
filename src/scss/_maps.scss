@@ -1,0 +1,63 @@
+.contact-section{
+    display: flex;
+    justify-content: center;
+    &__body{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 45px 0 75px;
+        color: black;
+        .contact-block{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            p{
+                margin-left: 10px;
+                margin-right: 45px;
+                font-family: 'Raleway';
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.map-section{
+    padding: 75px 0;
+    background: #202020;
+    #map{
+        max-width: 1121px;
+        height: 663px;
+        margin: 0 auto;
+    }
+}
+
+
+/*Адаптив*/
+@media (max-width: 1046px) {
+}
+@media (max-width: 988px) {
+    .map-section{
+        #map{
+            height: 563px;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .map-section{
+        #map{
+            height: 363px;
+        }
+    }
+}
+@media (max-width: 850px) {
+}
+@media (max-width: 720px) {
+}
+@media (max-width: 560px) {
+    .contact-section{
+        &__body{
+            margin-left: 50px;
+            justify-content: start;
+        }
+    }
+}

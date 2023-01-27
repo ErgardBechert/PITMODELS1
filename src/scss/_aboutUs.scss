@@ -8,3 +8,108 @@ $gray: #D9D9D9;
         padding: 44px 0 0 0;
     }
 }
+
+.appeal-section{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    &__body{
+        display: flex;  
+        justify-content: center;    
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+        margin-right: 73px;
+        p{
+            margin-bottom: 30px;
+            color: #000;
+            font-family: 'Raleway';
+            font-weight: 600;
+        }
+    }
+    &__img{
+        .temporary-img{
+            width: 300px;
+            height: 472px;
+            background: #D9D9D9;
+        }
+    }
+}
+
+.about-us-section{
+    background: #202020;
+    &__title{
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-around;
+        p{
+            width: 441px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+@media (max-width: 1046px) {
+
+}
+@media (max-width: 988px) {
+
+}
+@media (max-width: 960px) {
+    .appeal-section{
+        margin-top: 100px;
+        margin-bottom: 80px;
+        &__body{
+            display: flex;  
+            flex-direction: column;
+            align-items: center;
+            padding: 60px;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-right: 73px;
+            p{
+            }
+        }
+        &__img{
+        }
+    }
+
+
+
+
+    .about-us-section{
+        background: #202020;
+        &__title{
+            padding-top: 60px;
+            margin-bottom: 50px;
+        }
+        &__body{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            p{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+
+}
+
+@media (max-width: 720px) {
+
+}
+@media (max-width: 540px) {
+
+}

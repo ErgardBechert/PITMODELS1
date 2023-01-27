@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/><script src="https://api-maps.yandex.ru/3.0/?apikey=94d007bd-6dbd-4b5e-a282-806502c0f042&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=94d007bd-6dbd-4b5e-a282-806502c0f042&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header class="header">
+        <div class=" __container">
+            <div class="header-body">
+            <div class="header-body__logo">
+                <a href="#">Логотип</a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+                <div class="header-body__menu">
+                    <ul class="header-body__menu-list">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="aboutUs.html">О нас</a></li>
+                        <li><a href="">Расписание</a></li>
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        
+        </div>
+    </header>
+    <section class="header-section section-main" style="background: linear-gradient(180deg, rgba(1, 1, 1, 0.984375) 0.01%, rgba(10, 10, 10, 0.805012) 45.15%, rgba(32, 32, 32, 0) 137.61%),
+    url('/src/img/brunette-athletic-woman-exercising-with-rubber-tape.jpg') center no-repeat; background-size: cover;">
+        <div class="content">
+            <div class="header-section__body">
+                <div class="title">
+                    <img src="/src/img/dumbbells-orange.svg" alt="">
+                    Свяжитесь с нами
+                </div>
+                <div class="subtitle">
+                    Всегда рады видеть вас в школе<br> модельного фитнеса "PiTMODELS".<br> 
+                    Приходите к нам, и начните новую<br> жизнь уже сегодня!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-section__body">
+            <div class="contact-block">
+                <img src="./src/img/contacts/location.png" alt="">
+                <p>454021, Россия, Челябинск,<br> пр. Победы 382 Б, 2 этаж</p>
+            </div>
+            <div class="contact-block">
+                <img src="./src/img/contacts/email.png" alt="">
+                <p>pitmodelsVIP@yandex.ru</p>
+            </div>
+            <div class="contact-block">
+                <img src="./src/img/contacts/phone.png" alt="">
+                <p>+ 7 (908) 492-62-48</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="map-section">
+        <div class="__container">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="__container">
+            
+            <div class="footer__body">
+                <div class="footer-logo">
+                    <a href="">logo</a>
+                </div>
+                <div class="footer__menu">
+                    <ul>
+                        <li>О нас</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. leo dignissim. Maecenas ultrices iaculis ipsum. Nulla</li>
+                        <li><img src="src/img/footer/location.svg" alt="">454021, Россия, Челябинск,
+                            пр. Победы 382 Б, 2 этаж</li>
+                        <li><img src="src/img/footer/gmail.svg" alt="">pitmodelsVIP@yandex.ru</li>
+                        <li><img src="src/img/footer/phone.svg" alt="">+ 7 (908) 492-62-48</li>
+                    </ul>
+                    <ul>
+                        <li>Наши занятия</li>
+                        <li>Наши занятия</li>
+                        <li>Наши занятия</li>
+                        <li>Наши занятия</li>
+                        <li>Наши занятия</li>
+                    </ul>
+                    <ul>
+                        <li>Часы работы</li>
+                        <li>Понедельник - Пятница:
+                            с 00:00 до 00:00
+                            </li>
+                        <li>Суббота:
+                            с 00:00 до 00:00</li>
+                        <li>Воскресенье выходной</li>
+                    </ul>
+                    <ul>
+                        <li>Мы в соц сетях</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.main-slider', {
+            observe: true,
+            observeParents: true,
+            observeSliderChildren: true,
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 4000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="./src/js/map.js"></script>
+    
+</body>
+</html>
