@@ -4,12 +4,74 @@ $gray: #D9D9D9;
 
 .blogs{
     color: black;
+    &-body{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin: 70px 0;
+        
+    }
+    &-side-bar{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__search{
+            display: flex;
+            & input{
+                width: 100%;
+                padding: 14px 24px;
+                border-radius: 5px 0 0 5px;
+                border: 1px solid $dark-gray;
+                
+            }
+            &-button{
+                display: flex;
+                padding: 14px 20px;
+                background-color: $orange;
+                border-radius: 0 5px 5px 0;
+                border-top: 1px solid $dark-gray;
+                border-right: 1px solid $dark-gray;
+                border-bottom: 1px solid $dark-gray;
+                cursor: pointer;
+            }
+        }
+        &__title{
+            background-color: $orange;
+            padding: 15px 15px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    
+        &__categoryes{
+            & a{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                width: 100%;
+                padding: 10px 15px;
+                border-bottom: 1px solid $dark-gray;
+                color: #000;
+            }
+        }
+        &__last{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
     &-cards{
         display: flex;
         flex-direction: column;
         gap: 85px;
         width: 65%;
-        margin: 70px 0;
+ 
     }
     &-card{
         &__header{
@@ -24,10 +86,6 @@ $gray: #D9D9D9;
                 color: $orange;
                 font-weight: 600;
                 font-size: 16px;
-                & p{
-                    color: $dark-gray;
-                    font-size: 10px !important;
-                }
             }
         }
         &__title{
