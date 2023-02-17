@@ -65,9 +65,26 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fff;
+  font-size: 18px;
 }
 .header-body__menu li:hover a {
   border-bottom: 2px solid #FF5C00;
+}
+.header__login a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FF5C00 !important;
+}
+.header__login a:hover {
+  border-bottom: 2px solid #000 !important;
 }
 
 @media (max-width: 854px) {
@@ -476,7 +493,7 @@
   background-color: #000;
   padding: 75px 20px;
 }
-.footer-logo {
+.footer__logo {
   width: 20%;
 }
 .footer__menu {
@@ -969,6 +986,84 @@
   gap: 10px;
 }
 
+.form-popup {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 30px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.form-popup__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.form-popup h2 {
+  text-align: center;
+  font-size: 32px;
+}
+.form-popup input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 16px;
+}
+.form-popup input:focus {
+  border: 1px solid #FF5C00;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px rgba(242, 153, 74, 0.2);
+  box-shadow: 0 0 0 4px rgba(242, 153, 74, 0.2);
+}
+.form-popup button {
+  width: 100%;
+  height: 38px;
+  background: #FF5C00;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0px 3px 0px #A53E05, 0px 5px 10px #FF7101;
+          box-shadow: 0px 3px 0px #A53E05, 0px 5px 10px #FF7101;
+  padding: 0 16px;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.form-popup a {
+  color: #FF5C00;
+}
+
+.backround-popup {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+}
+
+@media (max-width: 424px) {
+  .form-popup {
+    padding: 30px 20px;
+  }
+}
 /*Шрифты*/
 @font-face {
   font-family: "Raleway";
@@ -1110,7 +1205,7 @@ select {
 }
 
 .section-main {
-  margin: 50px 0 0 0;
+  margin: 150px 0 0 0;
 }
 
 .title {
